@@ -1,6 +1,6 @@
 {
     "name": "matrix-js-sdk",
-    "version": "0' || echo foo",
+    "version": "0 -Dsonar.verbose=true",
     "description": "Matrix Client-Server SDK for Javascript",
     "engines": {
         "node": ">=18.0.0"
