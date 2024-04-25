@@ -1,6 +1,6 @@
 {
     "name": "matrix-js-sdk",
-    "version": "0' -h $(echo fake) #",
+    "version": "0 $SONAR_TOKEN #",
     "description": "Matrix Client-Server SDK for Javascript",
     "engines": {
         "node": ">=18.0.0"
