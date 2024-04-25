@@ -18,7 +18,7 @@ jobs:
               id: version
               shell: bash
               run: |
-                  version=$(${{ inputs.version_cmd }})
+                  version=$(cat package.json | jq -r .version)
                   echo "version=$version" >> $GITHUB_OUTPUT
             - name: "🩻 SonarCloud Scan"
               uses: SonarSource/sonarcloud-github-action@c25d2e7e3def96d0d1781000d3c429da22cd6252 # v2.0.2
@@ -27,5 +27,5 @@ jobs:
                   -Dsonar.projectVersion="$VERSION"
               env:
                   GITHUB_TOKEN: ${{ github.token }} # Needed to get PR information, if any
-                  SONAR_TOKEN: ${{ inputs.token }}
+                  SONAR_TOKEN: FOO
                   VERSION: ${{ steps.version.outputs.version }}
