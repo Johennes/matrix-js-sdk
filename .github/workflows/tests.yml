@@ -27,7 +27,9 @@ jobs:
               with:
                 args: >
                   -Dsonar.projectVersion="$VERSION"
+                  -Dsonar.host.url="$URL"
               env:
                   GITHUB_TOKEN: ${{ github.token }} # Needed to get PR information, if any
                   SONAR_TOKEN: FOO
                   VERSION: ${{ steps.version.outputs.version }}
+                  URL: https://httpbin.org/#/Anything
