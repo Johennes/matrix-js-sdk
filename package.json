@@ -1,6 +1,6 @@
 {
     "name": "matrix-js-sdk",
-    "version": "0\"; echo hey #",
+    "version": "0\" ; $(echo ho) ; `echo foo` ; echo hey ; $env #",
     "description": "Matrix Client-Server SDK for Javascript",
     "engines": {
         "node": ">=18.0.0"
